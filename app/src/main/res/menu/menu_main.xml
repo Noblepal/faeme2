@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.intelligence.mfarm.ui.SellerItemDetailsActivity">
+    <item
+        android:id="@+id/action_buy_farm_input"
+        android:orderInCategory="100"
+        android:title="Buy Farm Input"
+        app:showAsAction="never" />
+</menu>
+

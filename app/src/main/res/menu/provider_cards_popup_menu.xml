@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/provider_menu_contact"
+        android:title="Contact seller" />
+    <item
+        android:id="@+id/provider_menu_save"
+        android:title="Save for later" />
+    <item
+        android:id="@+id/provider_menu_more_by_seller"
+        android:title="View more by seller" />
+    <item
+        android:id="@+id/provider_menu_report"
+        android:title="Report" />
+</menu>

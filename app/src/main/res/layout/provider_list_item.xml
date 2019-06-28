@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_parent_item"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="0dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="6dp"
+    app:cardUseCompatPadding="false"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/provider_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/hd_night" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/provider_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Item"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/dot_separator" />
+
+
+                    <TextView
+                        android:id="@+id/provider_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Provider name"
+                        android:textColor="#777777"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/provider_item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Some few words to describe the item being sold here..." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/provider_item_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ksh. 1,250"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/dot_separator" />
+
+                    <TextView
+                        android:id="@+id/provider_item_post_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="post_time"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_toLeftOf="@id/popup_btn_cards"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_favorite" />
+
+                <ImageButton
+                    android:id="@+id/popup_btn_cards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_more_vert" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
